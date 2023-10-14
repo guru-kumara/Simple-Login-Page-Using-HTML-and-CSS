@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+nav
+{
+    background: black;
+    width: 100%;
+    padding: 10px 0;
+}
+.Login
+{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Login ul{
+    display: inline-flex;
+}
+.Login ul li{
+    list-style: none;
+    margin-right: 17px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.loginname a
+{
+    font-size: 25px;
+    text-decoration: none;
+    color:white;
+    margin-left: 30px;
+    font-weight: 600;
+}
+.loginname a:hover{
+    background: white;
+    color: black;
+}
+.Login ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.Login ul li a:hover{
+    background: white;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(pexels-photo-733857.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.box
+{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background:black;
+    border-radius: 8px;
+}
+.box form{
+    position: absolute;
+    inset: 4px;
+    background: black;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h2{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+}
+.box form .inputbox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.box form .inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #232323;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.box form .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 1px 10px;
+    pointer-events: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+
+}
+.box form .inputbox input:valid ~span,
+.box form .inputbox input:focus ~span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.box form .inputbox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+.box form .inputbox input:valid ~i,
+.box form .inputbox input:focus ~i
+{
+    height: 44px;
+}
+.box form .links
+{
+ display: flex;
+ justify-content: space-between;
+}
+.box form .links a{
+    margin: 10px 0;
+    font-size:0.75em ;
+    color: #8f8f8f;
+    text-decoration: none;
+    
+}
+.box form .links a:hover,
+.box form .links a:nth-child(2)
+{
+    color: #fff;
+}
+.box form  input[type="submit"]
+{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+
+}
+.box form  input[type="submit"]:active
+{
+    opacity: 0.8;
+}
